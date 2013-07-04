@@ -1,0 +1,12 @@
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+
+
+public class Store extends JFrame {
+public Store(){
+	super("Store");
+	setSize(new Dimension(400,400));
+	setVisible(true);
+}
+}

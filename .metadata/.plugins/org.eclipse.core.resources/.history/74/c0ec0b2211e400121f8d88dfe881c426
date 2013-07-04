@@ -1,0 +1,39 @@
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+/**
+ * Trivial client for the date server.
+ */
+public class ChatClient {
+BufferedReader input;
+PrintWriter output;
+	public ChatClient(){
+		String serverAddress = JOptionPane.showInputDialog(
+				"Enter IP Address of a machine that is\n" +
+				"running the date service on port 9090:");
+		Socket s;
+		try {
+			s = new Socket(serverAddress, 9090);
+			input = new BufferedReader(new InputStreamReader(s.getInputStream()));
+			output = new PrintWriter(s.getOutputStream(),true);
+		} catch (UnknownHostException e) {
+			System.out.println("Couldn't find the host.");
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.out.println("Got an IO exception");
+
+		}
+	}
+	
+	public void submit(String text){
+		
+	}
+}

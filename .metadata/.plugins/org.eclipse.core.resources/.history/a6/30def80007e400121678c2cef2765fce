@@ -1,0 +1,8 @@
+
+public class RawrDriver {
+
+	public static void main(String[] args) {
+	new Rawr();
+	}
+
+}

@@ -1,0 +1,21 @@
+
+public class TreeFun {
+
+public static void main (String[]args){
+	BinaryTree tree = new BinaryTree();
+	/*tree.add(7);
+	tree.add(9);
+	tree.add(12);
+	tree.add(542);
+	tree.add(10);
+	tree.add(19);
+	tree.add(3);
+	tree.add(6);
+	tree.add(7);
+	tree.add(234);
+	tree.print();
+	System.out.println("Tree contains 11?"+ tree.contains(11));*/
+	BinaryTree tree1 = new BinaryTree();
+	
+}
+}

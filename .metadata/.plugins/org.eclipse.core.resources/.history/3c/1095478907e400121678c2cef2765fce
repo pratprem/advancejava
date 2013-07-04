@@ -1,0 +1,22 @@
+import java.awt.Dimension;
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JTextPane;
+
+
+public class Rawr extends JFrame{
+public Rawr(){
+	super("Rawr Instant Messenger");
+	setSize(new Dimension(400,600));
+	setLayout(new GridLayout(1,2));
+	
+	initialize();
+	setVisible(true);
+}
+
+private void initialize() {
+	JTextPane pane = new JTextPane();
+	
+}
+}

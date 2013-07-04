@@ -1,0 +1,33 @@
+import java.awt.Dimension;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JTextPane;
+
+
+public class Rawr extends JFrame{
+	public static void main(String[]args){
+		new Rawr();
+	}
+public Rawr(){
+	super("Rawr Instant Messenger");
+	setSize(new Dimension(400,600));
+	setLayout(new GridBagLayout());
+	
+	initialize();
+	setVisible(true);
+}
+
+private void initialize() {
+	JTextPane pane = new JTextPane();
+	pane.setEditable(false);
+	add(pane);
+	JTextField field = new JTextField();
+	add(field);
+	JButton button = new JButton("send");
+	add(button);
+}
+}
